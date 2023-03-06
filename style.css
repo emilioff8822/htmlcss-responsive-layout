@@ -68,6 +68,9 @@ max-width: 1600px;
   .mcontainer .row {
     flex-direction: column;
   }
+  .testo {
+    text-align: center;
+  }
 
 }
 
@@ -201,4 +204,10 @@ height: 300px;
     background-color: darkkhaki ;   
      border: 1px solid blue;
     height: 300px;
+    }
+
+    .pref {
+      height: 300px;
+      background-color: violet;
+      padding-left: 3;
     }
