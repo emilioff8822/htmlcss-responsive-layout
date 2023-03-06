@@ -5,11 +5,7 @@
   box-sizing: border-box;
 }
 
-.debug {
-  background-color: rgba(255, 66, 66, 0.3);
-  border: 1px solid black;
-  height: 100%;
-}
+
 
 .dflex {
   display: flex;
@@ -33,6 +29,13 @@
 .wrap {
   flex-wrap: wrap;
 }
+
+.debug {
+  background-color: rgba(16, 199, 138, 0.3);
+  border: 1px solid black;
+  height: 100%;
+}
+
 
 
 header {
@@ -65,20 +68,29 @@ max-width: 1600px;
   .mcontainer .row {
     flex-direction: column;
   }
- 
+
 }
 
 @media screen and (min-width: 768px) {
   .mcontainer {
-    width: 95%;
+    width: 80%;
     
   }
 
-  .row {
+  .mcontainer .row {
+    flex-direction: row;
     display: flex;
+    flex-wrap: wrap;
   }
  .card {
-  width:40%;
+  width: calc(100% / 3);
+ }
+ .card.big {
+  width: calc(100% * 2 / 3);
+ }
+ .card2 {
+  width: calc(100% / 2);
+
  }
 }
 
@@ -96,11 +108,12 @@ max-width: 1600px;
 }
 
 
+
 /* MAIN */
+
 .row {
   display: flex;
 }
-
 .mcontainer {
 margin-top: 40px;
 width: 95%;
@@ -110,5 +123,15 @@ width: 95%;
   background-color: lightblue;
   border: 1px solid blue;
   height: 300px;
-  margin-bottom: 20px;
+}
+
+.col{
+  min-height: 300px; /*debug da togliere*/
+
+}
+
+.card2 {
+background-color:coral ;   
+ border: 1px solid blue;
+height: 300px;
 }
