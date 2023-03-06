@@ -10,3 +10,105 @@
   border: 1px solid black;
   height: 100%;
 }
+
+.dflex {
+  display: flex;
+}
+.centra {
+  align-items: center;
+
+}
+
+.jcentra{
+  justify-content: center;
+}
+
+.h100 {
+  height: 100%;
+
+}
+.betw {
+  justify-content: space-between;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+
+
+header {
+  height: 80px;
+  background-color: lightblue;
+}
+
+header ul li {
+  list-style: none;
+  margin-right: 20px;
+}
+.hcontainer {
+  margin-left: 30px;
+width: 80%;
+max-width: 1600px;
+}
+
+.desktop {
+  display: none;
+}
+
+
+/*RESPONSIVE*/
+
+@media screen and (min-width: 480px) {
+  .hcontainer {
+    width: 80%;
+    
+  }
+  .mcontainer .row {
+    flex-direction: column;
+  }
+ 
+}
+
+@media screen and (min-width: 768px) {
+  .mcontainer {
+    width: 95%;
+    
+  }
+
+  .row {
+    display: flex;
+  }
+ .card {
+  width:40%;
+ }
+}
+
+@media screen and (min-width: 1200px) {
+  .hcontainer {
+    width: 90%;
+    
+  }
+ .desktop {
+  display: block;
+ }
+ .mobile {
+  display: none;
+ }
+}
+
+
+/* MAIN */
+.row {
+  display: flex;
+}
+
+.mcontainer {
+margin-top: 40px;
+width: 95%;
+}
+
+.card {
+  background-color: lightblue;
+  border: 1px solid blue;
+  height: 300px;
+  margin-bottom: 20px;
+}
